@@ -164,10 +164,15 @@ namespace Assignment4
                             //do this in the end
                             oGrid.GetSquare(Square1.X, Square1.Y).BackColour = Color.Gray;
                             oGrid.GetSquare(Square2.X, Square2.Y).BackColour = Color.Gray;
-
+                            Turns = 2;
+                            lblWhichPlayer.Text = "Player Turn: Player 1";
                         }
-                        IsPlayer1 = false;
-                        Turns = 2;
+                        else 
+                        {
+                            lblWhichPlayer.Text = "Player Turn: Player 2";
+                            IsPlayer1 = false;
+                            Turns = 2;
+                        }
                         oGrid.CheckFinish();
                     }
                         
@@ -231,8 +236,15 @@ namespace Assignment4
                             oGrid.GetSquare(Square2.X, Square2.Y).BackColour = Color.Gray;
                             oGrid.CheckFinish();
                             Turns = 2;
+                            lblWhichPlayer.Text = "Player Turn: Player 2";
                         }
-                        IsPlayer1 = true;
+                        else
+                        {
+                            IsPlayer1 = true;
+                            Turns = 2;
+                            lblWhichPlayer.Text = "Player Turn: Player 1";
+                        }
+                        
 
                         //lblContinue.Visible = true;
                         //Turns = 2;
@@ -262,6 +274,11 @@ namespace Assignment4
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblContinue_Click(object sender, EventArgs e)
         {
 
         }

@@ -98,6 +98,7 @@ namespace Assignment4
             this.lblContinue.TabIndex = 5;
             this.lblContinue.Text = "NEXT PLAYERS TURN \r\n(PRESS TO CONTINUE)";
             this.lblContinue.Visible = false;
+            this.lblContinue.Click += new System.EventHandler(this.lblContinue_Click);
             // 
             // label1
             // 
