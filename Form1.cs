@@ -246,25 +246,19 @@ namespace Assignment4
                         }
                         
 
-                        //lblContinue.Visible = true;
-                        //Turns = 2;
-                        //oGrid.CheckFinish();
-                       // MessageBox.Show("before game finsh");
+                       
                         if (oGrid.mGameFinish == true)
-                        {
-                            MessageBox.Show("in game finsh");
+                        {                           
                             if (Player1Score > Player2Score)
-                            {
-                               // MessageBox.Show("PLAYER 1 HAS WON");
+                            {                              
                                 MessageBox.Show("PLAYER 1 HAS WON");
                             }
                             else if (Player1Score < Player2Score)
-                            {
-                                //MessageBox.Show("PLAYER 2 HAS WON");
+                            {                               
                                 MessageBox.Show("PLAYER 2 HAS WON");
                             }
                         }
-                       // MessageBox.Show("exiting game finsh");
+                       
                     }
                     
                    
