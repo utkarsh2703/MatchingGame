@@ -38,6 +38,7 @@ namespace Assignment4
             this.lblContinue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblP2Score = new System.Windows.Forms.Label();
+            this.lblReset = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblinstructions
@@ -117,11 +118,23 @@ namespace Assignment4
             this.lblP2Score.TabIndex = 7;
             this.lblP2Score.Text = "Player 2 Score: 0";
             // 
+            // lblReset
+            // 
+            this.lblReset.AutoSize = true;
+            this.lblReset.Font = new System.Drawing.Font("Stencil", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReset.ForeColor = System.Drawing.Color.Red;
+            this.lblReset.Location = new System.Drawing.Point(351, 300);
+            this.lblReset.Name = "lblReset";
+            this.lblReset.Size = new System.Drawing.Size(381, 33);
+            this.lblReset.TabIndex = 8;
+            this.lblReset.Text = "TO PLAY AGAIN PRESS \"E\" ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1115, 653);
+            this.Controls.Add(this.lblReset);
             this.Controls.Add(this.lblP2Score);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblContinue);
@@ -150,6 +163,7 @@ namespace Assignment4
         private System.Windows.Forms.Label lblContinue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblP2Score;
+        private System.Windows.Forms.Label lblReset;
     }
 }
 
